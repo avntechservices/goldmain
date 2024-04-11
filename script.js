@@ -31,6 +31,7 @@ const body = document.querySelector("body"),
       
 //   js code to toggle sidebar
 sidebarOpen.addEventListener("click" , () =>{
+  $(".productsmenu").hide();
     nav.classList.add("active");
 });
 
@@ -38,19 +39,19 @@ siderbarClose.addEventListener("click" , () =>{
   nav.classList.remove("active");
 });
 
-// body.addEventListener("click" , e =>{
-//     let clickedElm = e.target;
-
-//     if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-//         nav.classList.remove("active");
-//     }
-// });
+body.addEventListener("click" , e =>{
+let clickedElm = e.target;
+// if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+//          nav.classList.remove("active");
+//      }
+ });
 
 $(document).ready(function() {
   $(".homepage").show();
   $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").hide();
+  // $(".productsmenu").hide();
 });
 
 $("#homeid").on("click" , function(){
@@ -60,7 +61,7 @@ $("#homeid").on("click" , function(){
   $(".contactpage").hide();
   nav.classList.remove("active");
 });
-$("#soldout").on("click" , function(){
+$("#soldout").on("click focusout" , function(){
    $(".homepage").hide();
   $(".soldoutpage").show();
   $(".aboutpage").hide();
