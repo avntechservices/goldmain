@@ -44,33 +44,33 @@ body.addEventListener("click" , e =>{
 
 $(document).ready(function() {
   $(".homepage").show();
-  $(".productssection").hide();
+  $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").hide();
 });
 
 $("#homeid").on("click" , function(){
   $(".homepage").show();
-  $(".productssection").hide();
+  $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").hide();
 });
-$("#productsid").on("click" , function(){
+$("#soldout").on("click" , function(){
    $(".homepage").hide();
-  $(".productssection").show();
+  $(".soldoutpage").show();
   $(".aboutpage").hide();
   $(".contactpage").hide();
 });
 
 $("#Aboutid").on("click" , function(){
   $(".homepage").hide();
-  $(".productssection").hide();
+  $(".soldoutpage").hide();
   $(".aboutpage").show();
   $(".contactpage").hide();
 });
 $("#Contactid").on("click" , function(){
   $(".homepage").hide();
-  $(".productssection").hide();
+  $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").show();
 });
