@@ -53,7 +53,10 @@ $(document).ready(function() {
   $(".contactpage").hide();
   $(".forsalepage").hide();
   $(".commentpage").hide();
+  $(".servicespage").hide();
   // $(".productsmenu").hide();
+  $(".referpage").hide();
+  
 });
 
 $("#homeid").on("click" , function(){
@@ -63,6 +66,8 @@ $("#homeid").on("click" , function(){
   $(".contactpage").hide();
   $(".forsalepage").hide();
   $(".commentpage").hide();
+  $(".servicespage").hide();
+  $(".referpage").hide();
   nav.classList.remove("active");
 });
 $("#soldout").on("click focusout" , function(){
@@ -73,6 +78,8 @@ $("#soldout").on("click focusout" , function(){
   $(".productsmenu").hide();
   $(".forsalepage").hide();
   $(".commentpage").hide();
+  $(".servicespage").hide();
+  $(".referpage").hide();
   nav.classList.remove("active");
 });
 
@@ -84,19 +91,22 @@ $("#Aboutid").on("click" , function(){
   $(".contactpage").hide();
   $(".forsalepage").hide();
   $(".commentpage").hide();
+  $(".referpage").hide();
+  $(".servicespage").hide();
 });
 $("#Contactid").on("click" , function(){
   nav.classList.remove("active");
   $(".homepage").hide();
   $(".soldoutpage").hide();
+  $(".referpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").show();
   $(".forsalepage").hide();
   $(".commentpage").hide();
+  $(".servicespage").hide();
 });
 
 $("#productsid").on("click" , function(){
-  debugger;
   $(".productsmenu").show();
   nav.classList.add("active");
 });
@@ -104,10 +114,12 @@ $("#productsid").on("click" , function(){
 $("#forsale").on("click" , function(){
     $(".forsalepage").show();
     $(".homepage").hide();
+    $(".referpage").hide();
   $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").hide();
   $(".productsmenu").hide();
+  $(".servicespage").hide();
   $(".commentpage").hide();
   nav.classList.remove("active");
 });
@@ -115,10 +127,39 @@ $("#forsale").on("click" , function(){
 $("#commentid").on("click" , function(){
   $(".forsalepage").hide();
   $(".commentpage").show();
+  $(".referpage").hide();
   $(".homepage").hide();
 $(".soldoutpage").hide();
 $(".aboutpage").hide();
 $(".contactpage").hide();
 $(".productsmenu").hide();
+$(".servicespage").hide();
+nav.classList.remove("active");
+});
+
+
+$("#servicesid").on("click" , function(){
+  $(".forsalepage").hide();
+  $(".commentpage").hide();
+  $(".homepage").hide();
+  $(".referpage").hide();
+$(".soldoutpage").hide();
+$(".aboutpage").hide();
+$(".contactpage").hide();
+$(".productsmenu").hide();
+$(".servicespage").show();
+nav.classList.remove("active");
+});
+
+$("#Referandearnid").on("click" , function(){
+  $(".forsalepage").hide();
+  $(".commentpage").hide();
+  $(".homepage").hide();
+  $(".referpage").show();
+$(".soldoutpage").hide();
+$(".aboutpage").hide();
+$(".contactpage").hide();
+$(".productsmenu").hide();
+$(".servicespage").hide();
 nav.classList.remove("active");
 });
