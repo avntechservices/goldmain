@@ -52,6 +52,7 @@ $(document).ready(function() {
   $(".aboutpage").hide();
   $(".contactpage").hide();
   $(".forsalepage").hide();
+  $(".commentpage").hide();
   // $(".productsmenu").hide();
 });
 
@@ -61,6 +62,7 @@ $("#homeid").on("click" , function(){
   $(".aboutpage").hide();
   $(".contactpage").hide();
   $(".forsalepage").hide();
+  $(".commentpage").hide();
   nav.classList.remove("active");
 });
 $("#soldout").on("click focusout" , function(){
@@ -70,6 +72,7 @@ $("#soldout").on("click focusout" , function(){
   $(".contactpage").hide();
   $(".productsmenu").hide();
   $(".forsalepage").hide();
+  $(".commentpage").hide();
   nav.classList.remove("active");
 });
 
@@ -80,6 +83,7 @@ $("#Aboutid").on("click" , function(){
   $(".aboutpage").show();
   $(".contactpage").hide();
   $(".forsalepage").hide();
+  $(".commentpage").hide();
 });
 $("#Contactid").on("click" , function(){
   nav.classList.remove("active");
@@ -88,6 +92,7 @@ $("#Contactid").on("click" , function(){
   $(".aboutpage").hide();
   $(".contactpage").show();
   $(".forsalepage").hide();
+  $(".commentpage").hide();
 });
 
 $("#productsid").on("click" , function(){
@@ -103,5 +108,17 @@ $("#forsale").on("click" , function(){
   $(".aboutpage").hide();
   $(".contactpage").hide();
   $(".productsmenu").hide();
+  $(".commentpage").hide();
   nav.classList.remove("active");
+});
+
+$("#commentid").on("click" , function(){
+  $(".forsalepage").hide();
+  $(".commentpage").show();
+  $(".homepage").hide();
+$(".soldoutpage").hide();
+$(".aboutpage").hide();
+$(".contactpage").hide();
+$(".productsmenu").hide();
+nav.classList.remove("active");
 });
