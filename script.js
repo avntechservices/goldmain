@@ -34,13 +34,17 @@ sidebarOpen.addEventListener("click" , () =>{
     nav.classList.add("active");
 });
 
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
-
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-        nav.classList.remove("active");
-    }
+siderbarClose.addEventListener("click" , () =>{
+  nav.classList.remove("active");
 });
+
+// body.addEventListener("click" , e =>{
+//     let clickedElm = e.target;
+
+//     if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+//         nav.classList.remove("active");
+//     }
+// });
 
 $(document).ready(function() {
   $(".homepage").show();
@@ -54,23 +58,34 @@ $("#homeid").on("click" , function(){
   $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").hide();
+  nav.classList.remove("active");
 });
 $("#soldout").on("click" , function(){
    $(".homepage").hide();
   $(".soldoutpage").show();
   $(".aboutpage").hide();
   $(".contactpage").hide();
+  $(".productsmenu").hide();
+  nav.classList.remove("active");
 });
 
 $("#Aboutid").on("click" , function(){
+  nav.classList.remove("active");
   $(".homepage").hide();
   $(".soldoutpage").hide();
   $(".aboutpage").show();
   $(".contactpage").hide();
 });
 $("#Contactid").on("click" , function(){
+  nav.classList.remove("active");
   $(".homepage").hide();
   $(".soldoutpage").hide();
   $(".aboutpage").hide();
   $(".contactpage").show();
+});
+
+$("#productsid").on("click" , function(){
+  debugger;
+  $(".productsmenu").show();
+  nav.classList.add("active");
 });

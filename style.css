@@ -115,7 +115,7 @@ body.dark nav{
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1230px;
+    max-width: 1367px;
     width: 100%;
     background-color: var(--nav-color);
     margin: 0 auto;
@@ -705,6 +705,6 @@ footer > p {
   }
   
   /* Show the neumorphic dropdown menu on hover */
-  .nav-links:hover .dropdown-content {
+  /* .nav-links:hover .dropdown-content {
     display: block;
-  }
+  } */
