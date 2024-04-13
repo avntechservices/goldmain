@@ -51,6 +51,7 @@
     background-size: cover;
   }
   
+  
   .star.filled {
     background-image: url('images/starfilled.jpg'); /* Add path to filled star image */
   }
