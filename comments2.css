@@ -1,0 +1,102 @@
+
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stars {
+    display: flex;
+    font-size: 0; /* Remove whitespace between inline-block elements */
+  }
+  
+  .star {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url('images/starempty.png'); /* Add path to empty star image */
+    background-size: cover;
+  }
+  
+  .star.filled {
+    background-image: url('images/starfilled.jpg'); /* Add path to filled star image */
+  }
+  @media (max-width: 768px) {
+    .comment-container {
+      max-width: 90%;
+    }
+    
+    .stars {
+      font-size: 20px;
+    }
+  }
+
+  /* Existing CSS styles */
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .comment p {
+    margin: 0;
+  }
+  
+  .comment p strong {
+    font-weight: bold;
+  }
+  
+  .comment p em {
+    font-style: italic;
+  }
+  
+/* Existing CSS styles */
+
+.comment-container {
+    max-width: 687px;
+    margin: 55px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 400px; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  
