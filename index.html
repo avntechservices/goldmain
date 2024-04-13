@@ -11,7 +11,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="comments.css" />
+    <link rel="stylesheet" href="comments2.css" />
     <!-- ===== Boxicons CSS ===== -->
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -530,7 +530,7 @@
     </div>
     </div>
     <div class="commentpage">
-      <div class="card">
+      <!-- <div class="card">
                
         <div class="row">
             
@@ -598,8 +598,28 @@
         
         </div>
 
+    </div> -->
+    <div class="comment-container">
+      <h2>Add Your Comments...</h2>
+      <form id="comment-form">
+        <input type="text" id="customer-name" placeholder="Your Name" required>
+        <textarea id="comment-input" placeholder="Write your comment here..." required></textarea>
+        <div class="rating">
+          <span>Your Rating:</span>
+          <div class="stars" id="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="comment-list"></div>
     </div>
-    </div>
+    
+  </div>
     <div class="servicespage" style="padding: 50px">
       <section id="products" class="products">
         <div class="container">
@@ -641,7 +661,7 @@
         
     </div>
     </footer>
-    
+    <script src="commentscript.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
