@@ -394,7 +394,8 @@ body.dark .search-field i{
 .product-card {
     flex-grow: 1;
     flex-basis:200;
-    width: calc(100% - -13px); /* Adjust width according to your layout */
+    max-width: 330px;
+    width: 100% ;/* Adjust width according to your layout */
     height: auto;
     display: block;
     margin: 15px;
@@ -407,6 +408,7 @@ body.dark .search-field i{
 }
 
 .product-card img {
+    max-width: 324px;
     width: 100%;
     height: auto;
     display: block;
