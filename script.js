@@ -59,6 +59,7 @@ $(document).ready(function() {
   
 });
 
+
 $("#homeid").on("click" , function(){
   $(".homepage").show();
   $(".soldoutpage").hide();
