@@ -60,7 +60,7 @@ main {
 .products{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0px;
 }
 .homecontent, .aboutcontent{
     /* position: absolute;
@@ -388,13 +388,13 @@ body.dark .search-field i{
 
 .col {
     flex-basis: calc(33.33% - 20px); /* Adjust width according to your layout */
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .product-card {
     flex-grow: 1;
     flex-basis:200;
-    max-width: 330px;
+    max-width: 300px;
     width: 100% ;/* Adjust width according to your layout */
     height: auto;
     display: block;
@@ -405,10 +405,16 @@ body.dark .search-field i{
     box-shadow: 5px 5px 10px #c7c7c7, 
                 -5px -5px 10px #ffffff;
     transition: box-shadow 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 12px;
 }
 
 .product-card img {
-    max-width: 324px;
+    max-width: 650px;
     width: 100%;
     height: auto;
     display: block;
@@ -712,3 +718,28 @@ footer > p {
   /* .nav-links:hover .dropdown-content {
     display: block;
   } */
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive{
+    max-width: 100%;
+  height: auto;
+  }
+
+  .col {
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
