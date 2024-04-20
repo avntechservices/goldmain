@@ -743,3 +743,10 @@ footer > p {
     clear: both;
     display: table;
   }
+
+  .responsive {
+    width: 100%;
+    max-width: 1300px;
+    max-height: 1300px;
+    height: 400px;
+  }
