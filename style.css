@@ -507,7 +507,7 @@ footer {
     padding: 20px; /* Spacing inside the footer */
     text-align: center; 
     margin-top: 20px;/* Center-align text */
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%; /* Full width */
@@ -744,15 +744,21 @@ footer > p {
     clear: both;
     display: table;
   }
-  .referpage {
-    
-    width: 100% !important;
-    max-width: 500px;
-    max-height: 800px !important;
+  .referimage {
+    margin-top: 75px;
+    width: 50%;
+    max-width: 400px;
+    max-height: 600px;
     height: auto;
-    margin: auto;
-   align-items: center !important;
-    margin-left: 8px !important;
     display: flex;
-  justify-content: center;
+    margin-left: auto;
+  margin-right: auto;
+    justify-content: center;
+  }
+
+  .responsive {
+    width: 100%;
+    max-width: 1300px;
+    max-height: 1300px;
+    height: 400px;
   }
